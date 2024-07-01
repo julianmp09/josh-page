@@ -10,8 +10,29 @@
 <body>
     <!-- Comienzo de mi cabezera -->
     <header>
-        <img src="./images/HEADER.png" alt="header-josh" loading="lazy">
-        <img src="./images/MY COURSE.png" alt="my-course" loading="lazy">
+        <section class="cabezera">
+            <div class="flex-iqz">
+                <h1 class="title-josh">Hello Josh!</h1>
+                <p>Its good to see you again.</p>
+            </div>
+            <div class="flex-der">
+                <img src="./images/josh.png" alt="Josh" loading="lazy" class="flex-der-image">
+            </div>
+        </section>
+        <!-- Comenzando mycourse -->
+         <section class="course">
+            <img src="./images/spain.png" alt="spain" loading="lazy" class="icon-spain">
+            <div>
+                <p><span class="text-black">Spanish B2</span></p>
+                <p class="parrafo-course">by Alejandro Velazquez</p>
+            </div>
+            <div class="grafico-circular">
+                <span class="porcentaje">83%</span>
+            </div>
+            <button class="boton">Continue</button>
+            <button class="arrows"><img src="./images/arrow-izq.png" alt="arrow-izq" loading="lazy"></button>
+            <button class="arrows"><img src="./images/arrow-der.png" alt="arrow-der" loading="lazy"></button>
+         </section>
         <img src="./images/COURSES SECTION.png" alt="courses-section" loading="lazy">
     </header>
     <!-- Comiendo de mi barra de navegacion -->
@@ -29,16 +50,26 @@
     <!-- Barra de busqueda derecha -->
     <div class="navigation">
         <img src="./images/NAVIGATION.png" alt="navigation" loading="lazy">
-        <img src="./images/YOUR STATISTICS SECTION.png" alt="your-statistics" loading="lazy">
+        <h2>Your statistics</h2>
+        <div class="statistics">
+            <span>Learning Hours</span>
+            <span>My Courses</span>
+            <!-- Dropdown -->
+             <select id="list">
+                <option value="">Weekly</option>
+             </select>
+        </div>
+        <canvas id="myChart" width="449.59" height="378.5"></canvas>
         <div class="go-premiun-banner">
             <div class="inside-go-premiun-banner">
-                <h1>Lern even more!</h1>
+                <h2 class="h2-premiun-banner">Lern even more!</h2>
                 <p class="p-premiun-banner">Unlock premium features only for $9.99 per month.</p>
-                <button>Go premium</button>
+                <button class="boton">Go premium</button>
             </div>
             <img src="./images/brain-book.png" alt="brain-book" loading="lazy" class="brain-book">
         </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
