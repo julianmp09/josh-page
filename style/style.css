@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root{
     --color-gray: rgba(236, 234, 234, 0.555);
-    --font-kanit: "Kanit", sans-serif;
+    --font-Baloo-Bhai: "Baloo Bhai 2", sans-serif;
+    --font-Roboto:"Roboto", sans-serif;
 }
 
 *{
@@ -43,15 +44,17 @@ header{
     background: var(--color-gray);
     border-radius: 14px;
     padding: 1rem;
-    font-family: var(--font-kanit);
+    font-family: var(--font-Baloo-Bhai);
 }
 
 .title-josh{
-    font-size: 2rem;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .flex-iqz > p{
-    font-weight: 350;
+    font-family: var(--font-Roboto);
+    font-weight: 400;
 }
 
 .flex-der-image{
@@ -69,7 +72,7 @@ header{
     width: 620px;
     height: 80px;
     background-color: var(--color-gray);
-    font-family: var(--font-kanit);
+    font-family: var(--font-Baloo-Bhai);
     border-radius: 1rem;
 }
 
@@ -84,8 +87,8 @@ header{
 }
 
 .parrafo-course{
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .arrows{
@@ -107,7 +110,8 @@ header{
 }
 
 .text-black{
-    font-family: var(--font-kanit);
+    font-size: 1rem;
+    font-family: var(--font-Baloo-Bhai);
     font-weight: bold;
 }
 
@@ -131,8 +135,14 @@ header{
 /* Comienzo de course section */
 .course-section{
     margin-top: 2.5rem;
-    font-family: var(--font-kanit);
+    font-family: var(--font-Baloo-Bhai);
     
+}
+
+.title-course{
+    font-family: var(--font-Baloo-Bhai);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .container-subtitle{
@@ -140,6 +150,7 @@ header{
     gap: 1.5rem;
     margin-top: 1rem;
 }
+
 
 .subtitle-courses-section-active{
     color: black;
@@ -167,9 +178,16 @@ header{
     border-radius: 0.5rem ;
 }
 
+.title{
+    font-family: var(--font-Baloo-Bhai);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 .paragraph{
-    font-size: 16px;
-    font-weight: 300;
+    font-family: var(--font-Roboto);
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /* Comienzo del nav-bar */
@@ -190,9 +208,9 @@ header{
 }
 
 .p-f{
-    font-family: "Kanit", sans-serif;
+    font-family: var(--font-Baloo-Bhai);
     color: white;
-    font-size: 3.5rem;
+    font-size: 64px;
     font-weight: bold;
 }
 
@@ -207,14 +225,167 @@ header{
     grid-row: 1/2;
     margin-top: 2rem;
 }
+/* Comienzo del search box*/
 
+.search-container{
+    display: flex;
+    justify-content: space-between;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: right;
+    direction: rtl; /* Cambia la dirección de escritura a derecha a izquierda */
+    unicode-bidi: embed; /* Controla la dirección del cursor */
+}
+.icon{
+    margin-left: -18rem;
+}
+.bi-search{
+    color: #000;
+}
+
+.notification-bell {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    margin-right: -18rem;
+}
+  
+.notification-bell .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+  
+.notification-bell:hover {
+    animation: moveBell 0.5s ease-in-out forwards;
+}
+
+.bi-bell{
+    color: black;
+}
+
+.profile-image{
+    margin-top: 0.8rem;
+    width: 55.19px;
+    height: 40px;
+}
+
+@keyframes moveBell {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+/* Finalizando el search box */
+/* Comenzando stats boxes */
+.stats-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-left{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 208px;
+    height: 96.33px;
+    border-radius: 14px;
+    background-color: var(--color-gray);
+    
+}
+
+.grid-right{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 96.33px;
+    border-radius: 14px;
+    background-color: var(--color-gray);
+    
+}
+
+.paragraph-grid{
+    font-family: var(--font-Roboto);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.eleven-grid, .four-grid{
+    font-family: var(--font-Baloo-Bhai);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* finalizando stats boxes */
+
+/* Comenzando con los graficos*/
+.title-statistics{
+    margin-top: 1.2rem;
+    font-family: var(--font-Baloo-Bhai);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container-subtitle-statistics{
+    display: flex;
+    gap: 1.3rem;
+    margin-top: 1rem;
+}
+
+.subtitle-statistics-section-active{
+    font-family: var(--font-Baloo-Bhai);
+    color: black;
+}
+
+.subtitle-statistics-section{
+    font-family: var(--font-Baloo-Bhai);
+    color: rgba(128, 128, 128, 0.397);
+}
+
+.list-statistics{
+    width: 88px;
+    height: 32px;
+    margin-left: 8.5rem;
+    border-radius: 8px;
+    background-color: var(--color-gray);
+    font-family: var(--font-Roboto);
+    text-align: center;
+    font-weight: bold;
+    font-family: 18px;
+}
+
+/* Finalizando los graficos */
+
+/* Comienzo de la seccion go- premiun */
 .go-premiun-banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
     margin-top: 2.5rem;
     padding: 1rem;
-    font-family: var(--font-kanit);
+    font-family: var(--font-Baloo-Bhai);
     background-color: var(--color-gray);
     border-radius: 1rem;
     width: 440px;
@@ -244,7 +415,7 @@ header{
     background-color: black;
     padding: 0.5rem;
     margin-top: 1.5rem;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--font-Baloo-Bhai);
     transition: all 0.3s ease-in-out;
 }
 
@@ -263,7 +434,7 @@ header{
     background-color: black;
     padding: 0.5rem;
     margin-top: 0.5rem;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--font-Baloo-Bhai);
     transition: all 0.3s ease-in-out;
 }
 

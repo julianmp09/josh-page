@@ -35,8 +35,17 @@
             <button class="arrows"><img src="./images/arrow-izq.png" alt="arrow-izq" loading="lazy"></button>
             <button class="arrows"><img src="./images/arrow-der.png" alt="arrow-der" loading="lazy"></button>
         </section>
-        <!-- Comenzando COURSE-SECTION (esta seccion esta escrita en el archivo JS)-->
-        <section id="course-section" class="course-section"></section>
+        <!-- Comenzando COURSE-SECTION-->
+        <section id="course-section" class="course-section">
+            <h2 class="title-course">Courses</h2>
+            <div class="container-subtitle">
+                <h3 class="subtitle-courses-section-active">All course</h3>
+                <h3 class="subtitle-courses-section">The Newest</h3>
+                <h3 class="subtitle-courses-section">Top Rated</h3>
+                <h3 class="subtitle-courses-section">Most Popular</h3>
+            </div>
+            <!-- El resto de codigo esta escrito atraves de JS -->
+        </section>
     </header>
     <!-- Comiendo de mi barra de navegacion -->
     <nav class="nav-bar">
@@ -52,13 +61,42 @@
     </nav>
     <!-- Barra de busqueda derecha -->
     <div class="navigation">
-        <img src="./images/NAVIGATION.png" alt="navigation" loading="lazy">
-        <h2>Your statistics</h2>
-        <div class="statistics">
-            <span>Learning Hours</span>
-            <span>My Courses</span>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="input-box">
+                <span class="icon"><i class="bi bi-search"></i></span>
+            </div>
+            <div class="notification-bell">
+                <i class="bi-bell"></i>
+                <span class="badge"></span>
+            </div>
+            <img src="./images/Profile picture.png" alt="Profile" class="profile-image">
+        </div>
+        <!-- stats boxes -->
+         <section class="stats-boxes">
+            <div class="grid-left">
+                <p class="eleven-grid">11</p>
+                <div>
+                    <p class="paragraph-grid">Courses</p>
+                    <p class="paragraph-grid">completed</p>
+                </div>
+            </div>
+            <div class="grid-right">
+                <div class="grid-left">
+                    <p class="four-grid">4</p>
+                    <div>
+                        <p class="paragraph-grid">Courses</p>
+                        <p class="paragraph-grid">in progress</p>
+                    </div>
+            </div>
+         </section>
+        <!-- Grafico -->
+        <h2 class="title-statistics">Your statistics</h2>
+        <div class="container-subtitle-statistics">
+            <h3 class="subtitle-statistics-section-active">Learning Hours</h3>
+            <h3 class="subtitle-statistics-section">My Course</h3>
             <!-- Dropdown -->
-            <select id="list">
+            <select id="list" class="list-statistics">
                 <option value="">Weekly</option>
             </select>
         </div>

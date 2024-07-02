@@ -79,6 +79,24 @@ const displayCourse = (course) => {
 
 displayCourse(course);
 
+// Agregando animacion a la campana de notificaciones
+
+const badge = document.querySelector('.notification-bell .badge');
+let count = 0;
+
+// Función para actualizar el contador y el contenido de .badge
+const actualizarContador = () => {
+  count++;
+  badge.textContent = count.toString();
+}
+
+// Añadir evento 'mouseover' a .notification-bell
+document.querySelector('.notification-bell').addEventListener('mouseover', () => {
+  actualizarContador();
+});
+
+
+
 
 /* Creacion de mi grafico usando la libreria chart.js */
 
