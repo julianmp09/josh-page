@@ -70,6 +70,17 @@ header{
     height: 80px;
     background-color: var(--color-gray);
     font-family: var(--font-kanit);
+    border-radius: 1rem;
+}
+
+.spain{
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.Spanish-b2{
+    display: flex;
 }
 
 .parrafo-course{
@@ -79,11 +90,15 @@ header{
 
 .arrows{
     border: none;
+    background: none;
+    margin-top: 3rem;
+    margin-left: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
 .arrows:hover{
     cursor: pointer;
+    background: gray;
 }
 
 .icon-spain{
