@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-.h2-premiun-banner{
-    font-size: 1.8rem;
-}
-
 i{
     color: white;
     font-size: 1.5rem;
@@ -55,7 +51,7 @@ header{
 }
 
 .flex-iqz > p{
-    font-weight: 400;
+    font-weight: 350;
 }
 
 .flex-der-image{
@@ -83,6 +79,7 @@ header{
 
 .arrows{
     border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .arrows:hover{
@@ -105,16 +102,60 @@ header{
     border: 2px solid black;
     border-radius: 50%;
     position: relative;
-  }
-  
-  .porcentaje {
+}
+
+.porcentaje {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 13px;
     color: #000;
-  }
+}
+
+/* Comienzo de course section */
+.course-section{
+    margin-top: 2.5rem;
+    font-family: var(--font-kanit);
+    
+}
+
+.container-subtitle{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.subtitle-courses-section-active{
+    color: black;
+}
+
+.subtitle-courses-section{
+    color: rgba(128, 128, 128, 0.397);
+}
+
+.learn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    width: 620px;
+    height: 80px;
+    border-radius: 1rem;
+    background-color: var(--color-gray);
+}
+
+.course-img{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem ;
+}
+
+.paragraph{
+    font-size: 16px;
+    font-weight: 300;
+}
 
 /* Comienzo del nav-bar */
 
@@ -156,18 +197,48 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
-    margin-top: 5.5rem ;
+    margin-top: 2.5rem;
+    padding: 1rem;
     font-family: var(--font-kanit);
     background-color: var(--color-gray);
+    border-radius: 1rem;
+    width: 440px;
+    height: 193px;
 }
 
 .inside-go-premiun-banner{
     padding-left: 1rem;
 }
 
-.p-premiun-banner{
-    font-size: 0.9rem;
+.h2-premiun-banner{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
 }
+
+.p-premiun-banner{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.boton-go-premiun{
+    width: 120px;
+    height: 40px;
+    border-radius: 8px 8px 8px 8px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    font-family: "Kanit", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-go-premiun:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+/* Finalizando la section go premiun banner */
 
 .boton{
     width: 120px;
