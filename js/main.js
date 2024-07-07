@@ -79,6 +79,34 @@ const displayCourse = (course) => {
 
 displayCourse(course);
 
+// Función para actualizar la línea de progreso
+const actualizarProgreso = (porcentaje) => {
+    let radio = 25;
+    let perimetro = 2 * Math.PI * radio;
+    let longitudLinea = (porcentaje / 100) * perimetro;
+        
+    let circuloProgreso = document.getElementById('progress');
+    circuloProgreso.setAttribute('stroke-dasharray', longitudLinea + ' ' + perimetro);
+        
+    document.querySelector('#percentage').textContent = porcentaje + '%';
+}
+
+// Incrementar el porcentaje gradualmente cada segundo
+let porcentajeActual = 0;
+const incrementoPorcentaje = 1; // Incremento por cada iteración
+const intervalo = 75; // Intervalo de tiempo en milisegundos
+
+const animarProgreso = () => {
+    if (porcentajeActual <= 83) {
+        actualizarProgreso(porcentajeActual);
+        porcentajeActual += incrementoPorcentaje;
+        setTimeout(animarProgreso, intervalo);
+    }
+}
+
+// Iniciar la animación cuando se cargue la página
+animarProgreso();
+
 // Agregando animacion a la campana de notificaciones
 
 const badge = document.querySelector('.notification-bell .badge');
@@ -125,3 +153,8 @@ options: {
 }
 }
 )
+
+
+
+
+  

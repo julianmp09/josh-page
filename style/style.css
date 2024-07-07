@@ -115,22 +115,54 @@ header{
     font-weight: bold;
 }
 
-.grafico-circular {
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 50%;
-    position: relative;
-}
+/* Diseño de mi barra de progreso circular */
 
-.porcentaje {
+.contenedor {
+    background-color: transparent;
+    height: 250px;
+    width: 150px;
+    position: relative;
+    border-radius: 5px;
+    margin: 100px auto;
+  }
+  .svg {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 13px;
-    color: #000;
-}
+    height: 100%;
+    width: 100%;
+    left: 50px;
+    top: 127px;
+  }
+  .box_percentage {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 100px;
+    top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .percentage {
+    font-family: var(--font-Baloo-Bhai);
+    font-size: 1rem;
+    color:black;
+  }
+  .progress2{
+    fill: none;
+    stroke-width: 4;
+    stroke: rgb(233, 233, 233);
+   }
+  .progress {
+    fill: none;
+    stroke-width: 4;
+    stroke: black;
+    transform: rotate(-360deg);
+    transform-origin: center;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.3s ease;
+  }
 
 /* Comienzo de course section */
 .course-section{
