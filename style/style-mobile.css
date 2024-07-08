@@ -93,7 +93,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 900px;
+        width: 700px;
         height: 20%;
         margin: 0;
         background-color: black;
@@ -112,7 +112,7 @@ body{
     }
 
     i{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .svg {
         position: absolute;
